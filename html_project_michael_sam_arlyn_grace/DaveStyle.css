@@ -24,19 +24,25 @@ header h1 {
     text-align:center;
 }
 .index-nav li{
-    background-color: #003875;
+    background-color: #00683F;
     padding:5px;
     display:inline;
-    border:1px solid #222222;
-    border-radius:5px;
+    border:10px solid white;
+    border-radius:15px;
     float:left;
     margin: 10px 0px 10px 20px;
-    box-shadow: inset -2px -2px 20px #240036;
-    -moz-box-shadow: inset -2px -2px 20px #240036;
-    -webkit-box-shadow: inset -2px -2px 20px #240036;
-    width:25%;
+    box-shadow: inset -2px -2px 40px #240036;
+    -moz-box-shadow: inset -2px -2px 40px #240036;
+    -webkit-box-shadow: inset -2px -2px 40px #240036;
+    width:24%;
     height:30px;
     padding:30px 30px 30px 30px;
+}
+.index-nav li:hover {
+    background-color: #005c38;
+}
+.index-nav li:active {
+    background-color: #004b2e;
 }
 .index-nav li a {
     text-decoration:none;
