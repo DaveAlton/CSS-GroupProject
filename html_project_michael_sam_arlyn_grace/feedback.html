@@ -37,7 +37,7 @@
     <p><strong>Special Events and Promotions</strong></p>
 
     <fieldset id="inputfield">
-          <legend>User's Information</legend>
+          <legend id="legendtitle">User's Information</legend>
           <li>
           <label for ="fname">First Name :</label>
              <input id="fname" type ="text" name="fname" />
@@ -70,20 +70,16 @@
              <input id="province" type ="text" name="province"/>
          </li>
          <li>
-         <label for ="city">City :</label>
-             <input id="city" type ="text" name="city"/>
-         </li>
-             
          <label for="country">Country :</label>
            <select id="select" name="country" id="country">
             <option value="canada">Canada</option>
             <option value="us">US</option>
             <option value="bermuda">Bermuda</option>
             <option value="australia">Australia</option>
-            </select>   <br />
+            </select> 
 
          <!-- RADIO BUTTON -->
-      <p>Gender</p>
+      <p id="gendertitle">Gender</p>
          <li>
          <label for ="female">Female</label>
          <input type ="radio" name ="Gender" value ="female" checked="checked" id="female" />
@@ -95,15 +91,17 @@
 
          <li>
          <label>Other Comments<textarea name="comments" cols="30" rows="5"></textarea></label>
+         </li>
 
              <!-- Submit Button -->
          <p></p>
+         <li>
          <input id="submit" type="submit" name ="submit" value="Submit" />
          </li>
                     
       </fieldset>
 
-     <p>Go back to Previous Page</p>
+     <p id="previoustitle">Go back to Previous Page</p>
      <form action ="Fortune_House.html"><input type="submit" name ="back" value="Back"
                   id="back"/>
      </form>
