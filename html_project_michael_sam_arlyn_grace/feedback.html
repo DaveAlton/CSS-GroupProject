@@ -38,28 +38,44 @@
 
     <fieldset id="inputfield">
           <legend>User's Information</legend>
+          <li>
           <label for ="fname">First Name :</label>
-             <input type ="text" name="fname" /><br />
+             <input id="fname" type ="text" name="fname" />
+          </li>
+          <li>
           <label for ="lname">Last Name :</label>
-             <input type ="text" name="lname"/><br />
+             <input id="lname" type ="text" name="lname"/>
+          </li>
+          <li>
           <label for ="user">UserName :</label>
-             <input type ="text" name ="user" id="user"
-                   size="10" maxlength ="6" /><br />
+             <input id="user" type ="text" name ="user"
+                   size="10" maxlength ="6" />
+          </li>
+          <li>
           <label for="pass" >Password :</label>
              <input type ="password" name ="pass" id="pass"
-                    size="10" maxlength="10" /><br />
-         <label for="email" >Email :</label>
-             <input type ="email" name ="email" id="Password1"
-                    size="15" maxlength="10" required placeholder="Enter email address" /><br />
+                    size="10" maxlength="10" />
+          </li>
+          <li>
+          <label for="email" >Email :</label>
+             <input type ="email" name ="email" id="email"
+                    size="15" maxlength="10" required placeholder="Enter email address" />
+         </li>
+         <li>
          <label for ="city">City :</label>
-             <input type ="text" name="city"/><br />
+             <input id="city" type ="text" name="city"/>
+         </li>
+         <li>
          <label for ="province">Province :</label>
-             <input type ="text" name="province"/><br />
+             <input id="province" type ="text" name="province"/>
+         </li>
+         <li>
          <label for ="city">City :</label>
-             <input type ="text" name="city"/><br />
-
+             <input id="city" type ="text" name="city"/>
+         </li>
+             
          <label for="country">Country :</label>
-           <select name="country" id="country">
+           <select id="select" name="country" id="country">
             <option value="canada">Canada</option>
             <option value="us">US</option>
             <option value="bermuda">Bermuda</option>
@@ -68,20 +84,22 @@
 
          <!-- RADIO BUTTON -->
       <p>Gender</p>
+         <li>
          <label for ="female">Female</label>
-         <input type ="radio" name ="Gender" value ="female" checked="checked" 
-                id="female" />
+         <input type ="radio" name ="Gender" value ="female" checked="checked" id="female" />
+         </li>
+         <li>
          <label for="male">Male</label>
-         <input type="radio" name="Gender" value ="male"
-                id="male" /><br />
+         <input type="radio" name="Gender" value ="male" id="male" />
+         </li>
 
-          <p></p>
-          <label>Other Comments<textarea name="comments" cols="30" rows="5"></textarea>
+         <li>
+         <label>Other Comments<textarea name="comments" cols="30" rows="5"></textarea></label>
 
-          </label>
              <!-- Submit Button -->
          <p></p>
-         <input type="submit" name ="submit" value="Submit" />
+         <input id="submit" type="submit" name ="submit" value="Submit" />
+         </li>
                     
       </fieldset>
 
