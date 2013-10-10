@@ -76,50 +76,71 @@
         </em>for more information.
     </p>
     </article>
-            <aside>
-            <h2 id="plan_your_trip">Plan Your Trip</h2>
-            <p>This is where you'll find all the schedules to plan your trip in Metro Vancouver.</p>    
-            <form action="#" enctype="multipart/form-data"  method="post">
-                <fieldset>
-                    <legend>Check Bus Schedules</legend>
-                    <label>
-                        Please Enter Bus Route No.
-                        <input type="text" size="21" name="busnumber" />
-                    </label>
-                    <label for="text">Select Bus Route</label>
-                        <select name="busroute" id="text">
-                            <option value="160">160: Port Coquitlam to Vancouver</option>
-                            <option value="97">97: Burnaby to Coquitlam</option>
-                            <option value="40">40: Richmond to Vancouver</option>
-                        </select>
-                    <label> Departure
-                        <input type="radio" name="transitway"  value="dep"     checked="checked" />
-                    </label>
-                    <label> Arrival 
-                         <input type="radio" name="transitway" value="ari" />
-                    </label>
-                    <label for="preference">Please choose a transportation tool: </label>
-                        <select name="transittool" id="preference" multiple="multiple">
-                            <option value="bus">Bus 
-                            </option>
-                            <option value="skytrain">SkyTrain 
-                            </option>
-                            <option value="seabus">Seabus 
-                            </option>
-                            <option value="westcoast">Westcoast Express 
-                            </option>
-                        </select>
-                    <p></p>
-                    <input type="submit" name="submit"
-                        value ="Plan My Trip Now" />
-                    <p></p>
-                    <p>Ask for mailing a schedule book?</p>
-                    <label>
-                         <textarea name="address"
-                         rows="10" cols="40" id="address"> Please put your address here </textarea>
-                    </label> 
-                </fieldset>
-             </form> 
+          <aside>
+          <h2 id="plan_your_trip">Plan Your Trip</h2>
+          <p>This is where you'll find all the schedules to plan your trip in Metro Vancouver.</p>    
+          <form action="#" enctype="multipart/form-data"  method="post">
+	      <ul>
+            	<li>
+                    <fieldset id="plan-trip">            	   
+                        <legend>Check Bus Schedules</legend>
+                        <ul>
+                            <li>
+                                <label for="bus-route">Please Enter Bus Route No.</label>
+                                <input type="text" id="bus-route" size="21" name="busnumber" />
+                            </li>
+                            <li>                    
+                                <label for="text">Select Bus Route</label>
+                                    <select name="busroute" id="text">
+                                        <option value="160">160: Port Coquitlam to Vancouver</option>
+                                        <option value="97">97: Burnaby to Coquitlam</option>
+                                        <option value="40">40: Richmond to Vancouver</option>
+                                    </select>
+                            </li>
+                            <li>                        
+                                <label for="departure">Departure</label>
+                                <input type="radio" id="departure" name="transitway"  value="dep" checked="checked" />
+                            </li> 
+                            <li>                  
+                                <label for="arrival">Arrival</label>
+                                <input type="radio" id="arrival" name="transitway" value="ari" />
+                            </li>
+                            <li>                    
+                                <label for="preference">Please choose a transportation tool: </label>
+                                <select name="transittool" id="preference" multiple="multiple">
+                                    <option value="bus">Bus 
+                                    </option>
+                                    <option value="skytrain">SkyTrain 
+                                    </option>
+                                    <option value="seabus">Seabus 
+                                    </option>
+                                    <option value="westcoast">Westcoast Express 
+                                    </option>
+                                </select>
+                            </li>                        
+                            <li>
+                                <input type="submit" name="submit" value ="Plan My Trip Now" />
+                            </li>
+                        </ul>                
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Ask for mailing a schedule book?</legend>
+                        <ul>
+                            <li>
+                            	<label for="schedule"></label>
+                                <textarea name="address" id="schedule"
+                                 rows="5" cols="30">Please put your address here</textarea>
+                            </li>
+                            <li>
+                                <input type="submit" name="submit" value ="Submit" />
+                            </li>
+                        </ul>                    
+                    </fieldset>
+                </li>
+	    </ul>
+          </form> 
           </aside> 
 <footer>
      <address>
