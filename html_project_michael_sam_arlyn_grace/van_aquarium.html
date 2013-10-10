@@ -122,13 +122,19 @@
                         </ol>
                 <form action="#" method="post">
                     <h3>Vote for your favorite aquarium program:</h3>
-                    <label for="vote">Your Vote</label>
-                        <select name="number" id="vote">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    <input type="submit" name="submit" value="Submit Vote" />
+                    <ul>
+                        <li>
+                            <label for="vote">Your Vote</label>
+                            <select name="number" id="vote">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </li>
+                        <li>                        
+                            <input type="submit" name="submit" value="Submit Vote" />
+                        </li>
+                    </ul>
                 </form>
 
             <h3>Short Video of the Dolphin Show</h3>    
@@ -148,12 +154,16 @@
                 <li>Cash or Credit Card for parking</li>
             </ul>
     <form action="#" method="post">
-        <h2>
-            Leave a Comment
-        </h2>
-        <label for="comment">Comments:</label>
-        <input type="text" name="comment" id="comment" size="30" maxlength="300"/>
-        <input type="submit" value="submit" />
+    <h3>Leave a Comment</h3>
+        <ul>
+        	<li>
+            	<label for="text1">Comment:</label>           
+                <textarea id="text1" name="comment" rows="5" cols="35">your comments</textarea>
+			</li>
+            <li>               
+                <input id="Submit1" type="submit" value="Submit" />
+			</li>                
+        </ul>        
     </form>
     </aside>
     <footer>
